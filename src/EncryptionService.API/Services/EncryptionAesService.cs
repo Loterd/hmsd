@@ -3,8 +3,8 @@ using System.Text;
 
 namespace EncryptionService.API.Services;
 
-public class EncryptionService {
-	public static string EncryptString(string key, string plainText) {
+public class EncryptionAesService : IEncryptionService {
+	public string EncryptString(string key, string plainText) {
 		byte[] iv = new byte[16];
 		byte[] array;
 
@@ -28,7 +28,7 @@ public class EncryptionService {
 		return Convert.ToBase64String(array);
 	}
 
-	public static string DecryptString(string key, string cipherText) {
+	public string DecryptString(string key, string cipherText) {
 		byte[] iv = new byte[16];
 		byte[] buffer = Convert.FromBase64String(cipherText);
 

@@ -1,3 +1,10 @@
 ﻿global using MediatR;
 global using EncryptionService.API.Models.DAO;
 global using EncryptionService.API.Models.Response;
+global using EncryptionService.API.Models.Request;
+global using Microsoft.AspNetCore.Mvc;
+global using EncryptionService.API.Commands;
+global using EncryptionService.API.Repositories;
+global using EncryptionService.API.Services;
+global using MiniValidation;
+global using Swashbuckle.AspNetCore.Annotations;

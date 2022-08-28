@@ -2,5 +2,5 @@
 
 public interface IEncryptionKeyRepository {
 	Task Add(string key);
-	Task<IEnumerable<EncryptionKey>> GetLast(int lastNumber);
+	Task<List<EncryptionKey>> GetLast(int lastQuantity);
 }

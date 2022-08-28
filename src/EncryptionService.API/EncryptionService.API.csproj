@@ -10,10 +10,9 @@
     <ItemGroup>
       <PackageReference Include="MediatR" Version="10.0.1" />
       <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Endpoints" />
+      <PackageReference Include="MiniValidation" Version="0.6.0-pre.20220527.55" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+      <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.4.0" />
     </ItemGroup>
 
 </Project>

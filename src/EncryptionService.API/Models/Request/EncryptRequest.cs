@@ -1,5 +1,8 @@
-﻿namespace EncryptionService.API.Models.Request; 
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace EncryptionService.API.Models.Request; 
 
 public class EncryptRequest {
-	public string ValueToEncrypt { get; set; }
+	[Required]
+	public string TextToEncrypt { get; set; }
 }
