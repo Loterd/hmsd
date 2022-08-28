@@ -3,3 +3,5 @@ obj
 /obj
 /bin
 .idea
+/.vscode/launch.json
+/.vscode/tasks.json

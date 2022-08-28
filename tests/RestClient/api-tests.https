@@ -1,0 +1,19 @@
+post https://localhost:7090/api/encrypt
+Content-Type: application/json
+
+{
+  "TextToEncrypt": "SomeTextToEncrypt"
+}
+
+###
+
+post https://localhost:7090/api/decrypt
+Content-Type: application/json
+
+{
+  "TextToDecrypt": "U7SLBEFb7DKI/LHG94fFEvipnryNJgQWojnjLQNmrMQ="
+}
+
+###
+
+post https://localhost:7090/api/rotate-key
