@@ -1,0 +1,19 @@
+post http://localhost:5063/gateway/encrypt
+Content-Type: application/json
+
+{
+  "TextToEncrypt": "SomeTextToEncrypt"
+}
+
+###
+
+post http://localhost:5063/gateway/decrypt
+Content-Type: application/json
+
+{
+  "TextToDecrypt": "U7SLBEFb7DKI/LHG94fFEvipnryNJgQWojnjLQNmrMQ="
+}
+
+###
+
+post http://localhost:5063/gateway/rotate-key

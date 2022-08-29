@@ -1,0 +1,49 @@
+{
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5063"
+  },
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/gateway/encrypt",
+      "UpstreamHttpMethod": [
+        "POST"
+      ],
+      "DownstreamPathTemplate": "/api/encrypt",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 5090
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/decrypt",
+      "UpstreamHttpMethod": [
+        "POST"
+      ],
+      "DownstreamPathTemplate": "/api/decrypt",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 5090
+        }
+      ]
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/rotate-key",
+      "UpstreamHttpMethod": [
+        "POST"
+      ],
+      "DownstreamPathTemplate": "/api/rotate-key",
+      "DownstreamScheme": "host.docker.internal",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "host.docker.internal",
+          "Port": 5090
+        }
+      ]
+    }
+  ]
+}

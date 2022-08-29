@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptionService.API", "src\EncryptionService.API\EncryptionService.API.csproj", "{B77685AC-EEC2-47DF-80CC-6CBCB9AD9A3F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptionService.API", "EncryptionService.API\EncryptionService.API.csproj", "{2E6542A9-76D7-4EA4-B4DB-D250F0E50AB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptionService.API.Gateway", "src\EncryptionService.API.Gateway\EncryptionService.API.Gateway.csproj", "{BFC32EC8-7DC2-41E5-A7B7-CCE082207519}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptionService.API.Gateway", "EncryptionService.API.Gateway\EncryptionService.API.Gateway.csproj", "{8D0CBF29-F90E-47D9-89CA-17084F4E8660}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,13 +16,13 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B77685AC-EEC2-47DF-80CC-6CBCB9AD9A3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B77685AC-EEC2-47DF-80CC-6CBCB9AD9A3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B77685AC-EEC2-47DF-80CC-6CBCB9AD9A3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B77685AC-EEC2-47DF-80CC-6CBCB9AD9A3F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BFC32EC8-7DC2-41E5-A7B7-CCE082207519}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BFC32EC8-7DC2-41E5-A7B7-CCE082207519}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BFC32EC8-7DC2-41E5-A7B7-CCE082207519}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BFC32EC8-7DC2-41E5-A7B7-CCE082207519}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E6542A9-76D7-4EA4-B4DB-D250F0E50AB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E6542A9-76D7-4EA4-B4DB-D250F0E50AB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E6542A9-76D7-4EA4-B4DB-D250F0E50AB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E6542A9-76D7-4EA4-B4DB-D250F0E50AB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D0CBF29-F90E-47D9-89CA-17084F4E8660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D0CBF29-F90E-47D9-89CA-17084F4E8660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D0CBF29-F90E-47D9-89CA-17084F4E8660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D0CBF29-F90E-47D9-89CA-17084F4E8660}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

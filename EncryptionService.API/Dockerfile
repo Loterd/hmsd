@@ -5,8 +5,8 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["src/EncryptionService.API/EncryptionService.API.csproj", "EncryptionService.API/"]
-RUN dotnet restore "src/EncryptionService.API/EncryptionService.API.csproj"
+COPY ["EncryptionService.API/EncryptionService.API.csproj", "EncryptionService.API/"]
+RUN dotnet restore "EncryptionService.API/EncryptionService.API.csproj"
 COPY . .
 WORKDIR "/src/EncryptionService.API"
 RUN dotnet build "EncryptionService.API.csproj" -c Release -o /app/build

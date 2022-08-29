@@ -1,0 +1,25 @@
+version: "3.6"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: EncryptionService.API/Dockerfile
+    ports:
+      - 5090:80
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+    volumes:
+      - ./:/EncryptionService.API
+  gateway:
+    build:
+      context: .
+      dockerfile: EncryptionService.API.Gateway/Dockerfile
+    ports:
+      - 5063:80
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+    volumes:
+      - ./:/EncryptionService.API.Gateway
