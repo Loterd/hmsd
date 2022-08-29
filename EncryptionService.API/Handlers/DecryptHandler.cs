@@ -1,6 +1,4 @@
-﻿using EncryptionService.API.Config;
-
-namespace EncryptionService.API.Handlers;
+﻿namespace EncryptionService.API.Handlers;
 
 public class DecryptHandler : IRequestHandler<DecryptCommand, DecryptResponse> {
 	private readonly IEncryptionService _encryptionService;

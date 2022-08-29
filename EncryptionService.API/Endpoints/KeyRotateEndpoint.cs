@@ -1,6 +1,4 @@
-﻿using EncryptionService.API.Config;
-
-namespace EncryptionService.API.Endpoints;
+﻿namespace EncryptionService.API.Endpoints;
 
 public static class KeyRotateEndpoint {
 	public static RouteHandlerBuilder MapKeyRotateEndpoint(this WebApplication app, string url) =>

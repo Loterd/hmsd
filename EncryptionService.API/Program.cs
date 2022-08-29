@@ -1,5 +1,3 @@
-using EncryptionService.API.Endpoints;
-
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();

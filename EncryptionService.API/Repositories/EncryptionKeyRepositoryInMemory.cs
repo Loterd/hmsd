@@ -1,7 +1,4 @@
-﻿using EncryptionService.API.Config;
-using Microsoft.Extensions.Caching.Memory;
-
-namespace EncryptionService.API.Repositories; 
+﻿namespace EncryptionService.API.Repositories; 
 
 public class EncryptionKeyRepositoryInMemory : IEncryptionKeyRepository {
 	private readonly IMemoryCache _memoryCache;

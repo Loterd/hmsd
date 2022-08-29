@@ -1,7 +1,4 @@
-﻿using System.Security.Cryptography;
-using System.Text;
-
-namespace EncryptionService.API.Services;
+﻿namespace EncryptionService.API.Services;
 
 public class EncryptionAesService : IEncryptionService {
 	public string EncryptString(string key, string plainText) {

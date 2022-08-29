@@ -1,7 +1,4 @@
-﻿using EncryptionService.API.Helpers;
-using System.ComponentModel.DataAnnotations;
-
-namespace EncryptionService.API.Models.Request;
+﻿namespace EncryptionService.API.Models.Request;
 
 public class DecryptRequest : IValidatableObject {
 	[Required] public string TextToDecrypt { get; set; }

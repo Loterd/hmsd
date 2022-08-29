@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace EncryptionService.API.Models.Request; 
+﻿namespace EncryptionService.API.Models.Request; 
 
 public class EncryptRequest {
 	[Required]
