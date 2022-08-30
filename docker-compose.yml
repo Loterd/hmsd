@@ -10,6 +10,8 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80
+      - LAST_KEY_QUANTITY_USE_TO_DECRYPT=5
+      - KEY_LENGTH=16
     volumes:
       - ./:/EncryptionService.API
   gateway:
@@ -21,5 +23,6 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80
+      - OCELOT_CONFIGURATION_FILE=ocelot-docker.json
     volumes:
       - ./:/EncryptionService.API.Gateway

@@ -3,3 +3,5 @@ global using Microsoft.Extensions.Configuration;
 global using Microsoft.Extensions.DependencyInjection;
 global using Ocelot.DependencyInjection;
 global using Ocelot.Middleware;
+global using EncryptionService.API.Gateaway.AppConfig;
+global using System;
